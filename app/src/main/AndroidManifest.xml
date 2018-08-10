@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sunil.pragati">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/pragatilogo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/pragatilogo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppFullScreenTheme"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".location.MyLocationUsingHelper"
+            android:label="MyLocation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".location.MyLocationUsingLocationAPI"
+            android:parentActivityName=".planning.CropPlanning"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.MarketActivity"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".care.CropCareActivity"
+            android:parentActivityName=".care.cropcare"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".planning.WeatherActivity"
+            android:parentActivityName=".planning.CropPlanning"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".planning.CropSequencing"
+            android:parentActivityName=".planning.CropPlanning"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".care.LeafTesting"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAIaBfOTA71wMYiFY1hlJP0kdxqKJ0Mf4E" />
+
+        <activity
+            android:name=".care.cropcare"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".planning.CropPlanning"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.KisanKendraMap"
+            android:parentActivityName=".market.MarketActivity"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".planning.SoilTestingManual"
+            android:parentActivityName=".care.cropcare"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.RegisterActivity"
+            android:parentActivityName=".market.MarketActivity"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.DerivativeActivity"
+            android:parentActivityName=".market.MarketActivity"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.OtherFarmers"
+            android:parentActivityName=".market.MarketActivity"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.BuyAndSell"
+            android:parentActivityName=".market.MarketActivity"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.ProductDetails"
+            android:parentActivityName=".market.MarketActivity"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.PriceList"
+            android:parentActivityName=".market.MarketActivity"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".market.ColdStorage"
+            android:parentActivityName=".market.MarketActivity"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".planning.YieldPrediction"
+            android:parentActivityName=".planning.CropPlanning"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".planning.PredictionReport"
+            android:parentActivityName=".planning.YieldPrediction"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".care.pHActivity"
+            android:parentActivityName=".planning.CropPlanning"
+            android:theme="@style/newToolbar"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

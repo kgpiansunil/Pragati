@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    tools:context="com.example.sunil.pragati.market.ProductDetails">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:hint="Full Name"
+            android:inputType="textPersonName"
+            android:paddingBottom="12dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+        <EditText
+            android:id="@+id/contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:hint="Contact"
+            android:inputType="phone"
+            android:padding="12dp"
+            android:paddingStart="16dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+
+        <Spinner
+            android:id="@+id/farmerSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:entries="@array/ProductName"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+        </Spinner>
+
+        <EditText
+            android:id="@+id/userPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@android:drawable/screen_background_light_transparent"
+            android:hint="Price Per Kg"
+            android:inputType="textMultiLine|textPersonName"
+            android:paddingBottom="12dp"
+            android:paddingEnd="12dp"
+            android:paddingStart="16dp"
+            android:paddingTop="12dp"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white" />
+
+
+        <Button
+            android:id="@+id/reg_btn"
+            style="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/background_signup"
+            android:clickable="true"
+            android:padding="16dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textAppearance="@android:style/TextAppearance"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

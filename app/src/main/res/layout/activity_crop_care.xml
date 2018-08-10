@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context="com.example.sunil.pragati.care.CropCareActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/dash_title_text"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+
+            <LinearLayout
+                android:id="@+id/img_upload_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/select_img_label"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/camera_text"/>-->
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/crop_camera_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="3dp"
+                        android:padding="8dp"
+                        android:background="@drawable/circlebgroundgreen"
+                        android:src="@drawable/ic_click" />
+
+                    <!--<TextView-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="@string/gallery_text"/>-->
+
+                    <android.support.v7.widget.AppCompatImageButton
+                        android:id="@+id/crop_select_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:layout_marginStart="3dp"
+                        android:background="@drawable/circleblue"
+                        android:src="@drawable/ic_collections_black" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <ImageView
+                    android:id="@+id/crop_preview_imageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:padding="16dp"
+                    android:src="@drawable/imageupload"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/colorPrimaryDark"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/crop_upload_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/upload_btn_text"
+                    android:background="@drawable/bg_proceed_enable"
+                    android:textColor="#fcfcfc"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:text="@string/upload_info_text"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/response_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/response_textView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="response text"/>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/back_to_dash_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="@string/back_btn_txt"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,222 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Pragati</string>
+    <string name="quotedesc">Welcome to Crop Planning</string>
+
+    <array name="States">
+        <item>Andhra Pradesh</item>
+        <item>Gujarat</item>
+        <item>Rajasthan</item>
+        <item>Madhya Pradesh</item>
+        <item>Uttar Pradesh</item>
+        <item>West Bengal</item>
+
+    </array>
+
+    <array name="Districts">
+        <item>Dewas</item>
+        <item>Mandsaur</item>
+        <item>Neemach</item>
+        <item>Bhopal</item>
+        <item>Sagaur</item>
+        <item>Katani</item>
+
+    </array>
+
+
+    <array name="SelectCrop">
+        <item>Paddy</item>
+        <item>Maize</item>
+        <item>Wheat</item>
+        <item>Soyabean</item>
+
+    </array>
+
+    <array name="farmerType">
+
+        <item>Buyer</item>
+        <item>Seller</item>
+
+    </array>
+
+    <array name="ProductName">
+
+        <item>Wheat</item>
+        <item>Maze</item>
+        <item>Corn</item>
+        <item>Rice</item>
+
+    </array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="dash_title_text">Leaf Analysis Tool</string>
+    <string name="camera_text">Camera</string>
+    <string name="gallery_text">Gallery</string>
+    <string name="upload_btn_text">Upload</string>
+    <string name="upload_info_text">Upload image for processing.</string>
+    <string name="no_image_warning_msg">Capture an image first!</string>
+    <string name="upload_progress_msg">Uploading, Please wait...</string>
+    <string name="something_went_wrong_msg">Something went wrong! Please try again.</string>
+    <string name="pic_chooser_msg">Select Picture</string>
+    <string name="select_img_label">Capture or, Select image for uploading</string>
+    <string name="back_btn_txt">Back</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="change_city">Change city</string>
+    <string name="open_weather_maps_app_id">11111</string>
+
+    <string name="weather_sunny">&#xf00d;</string>
+    <string name="weather_clear_night">&#xf02e;</string>
+    <string name="weather_foggy">&#xf014;</string>
+    <string name="weather_cloudy">&#xf013;</string>
+    <string name="weather_rainy">&#xf019;</string>
+    <string name="weather_snowy">&#xf01b;</string>
+    <string name="weather_thunder">&#xf01e;</string>
+    <string name="weather_drizzle">&#xf01c;</string>
+
+    <string name="place_not_found">Sorry, no weather data found.</string>
+
+
+    //
+
+    <string name="crop_prompt">Please select a crop:</string>
+    <string name="crop_length_prompt">Will this be an early/seed or full season crop?</string>
+    <string name="crop_length_early">Early/seed</string>
+    <string name="crop_length_full">Full season</string>
+    <string name="crop_sown_prompt">When will the crop be planted?</string>
+    <string name="manure_credits_prompt">Will you be applying manure?</string>
+    <string name="manure_credits_checkbox">Yes</string>
+    <string name="manure_type_prompt">What type of manure will you apply?</string>
+    <string name="manure_amount_prompt">How much manure will you apply?</string>
+    <string name="prev_crop_prompt">What crop was sown previously?</string>
+    <string name="prev_crop_stand_prompt">How would you rate the previous crop stand?</string>
+    <string name="poor_btn">Poor</string>
+    <string name="fair_btn">Fair</string>
+    <string name="good_btn">Good</string>
+    <string name="organic_matter_prompt">What is the organic matter level of your soil?</string>
+    <string name="less_organic_btn">Less than 3.5%</string>
+    <string name="more_organic_btn">3.5% or more</string>
+    <string name="soil_test_prompt">What are your soil test ratings?</string>
+    <string name="phosphate_prompt">Phosphate</string>
+    <string name="potash_prompt">Potash</string>
+    <string name="calculate_btn">Calculate!</string>
+    <string name="suggested_crop_rates_label">Your suggested application rates are:</string>
+    <string name="nitrogen_label">Nitrogen</string>
+    <string name="nitrogen_requirement">0.0</string>
+    <string name="phosphate_requirement">0.0</string>
+    <string name="potash_requirement">0.0</string>
+    <string name="units">lb/ac</string>
+    <string name="convert_units_btn">Convert units</string>
+
+    <string-array name="cropsToSelect">
+        <item>Barley</item>
+        <item>Bean</item>
+        <item>Beet</item>
+        <item>Blueberry</item>
+        <item>Broccoli</item>
+        <item>Brussel Sprouts</item>
+        <item>Buckwheat</item>
+        <item>Cabbage</item>
+        <item>Carrot</item>
+        <item>Cauliflower</item>
+        <item>Celery</item>
+        <item>Cereal</item>
+        <item>Cole Crop</item>
+        <item>Coniferous</item>
+        <item>Corn - Grain</item>
+        <item>Corn - Silage</item>
+        <item>Corn - Sweet</item>
+        <item>Cranberry</item>
+        <item>Cucumber</item>
+        <item>Deciduous</item>
+        <item>Fall Rye</item>
+        <item>Field Pea</item>
+        <item>Fruit Trees</item>
+        <item>Garlic</item>
+        <item>Grass Hay (>70% Hay)</item>
+        <item>Grass Pasture (>70% Grass)</item>
+        <item>Green Pea</item>
+        <item>Legume Hay (>60% Legume)</item>
+        <item>Legume Pasture (>60% Legume)</item>
+        <item>Legume Seeded</item>
+        <item>Lettuce</item>
+        <item>Mixed Forage Seeded</item>
+        <item>Mixed Grain</item>
+        <item>Mixed Hay (30% - 60% Legume)</item>
+        <item>Mixed Pasture (30% - 60% Legume)</item>
+        <item>Oat</item>
+        <item>Onion</item>
+        <item>Parsnip</item>
+        <item>Pepper</item>
+        <item>Potato - AC Chaleur</item>
+        <item>Potato - Alpine Russet</item>
+        <item>Potato - Atlantic</item>
+        <item>Potato - Butte</item>
+        <item>Potato - Dakota Pearl</item>
+        <item>Potato - Fabula</item>
+        <item>Potato - Goldrush</item>
+        <item>Potato - Highland Russet</item>
+        <item>Potato - Innovator</item>
+        <item>Potato - Irish Cobbler</item>
+        <item>Potato - Kennebec</item>
+        <item>Potato - Marcy</item>
+        <item>Potato - Norchip</item>
+        <item>Potato - Norland</item>
+        <item>Potato - Pontiac</item>
+        <item>Potato - Prospect</item>
+        <item>Potato - Ranger Russet</item>
+        <item>Potato - Russet Norkotah</item>
+        <item>Potato - Russet Burbank</item>
+        <item>Potato - Shepody</item>
+        <item>Potato - Snowden</item>
+        <item>Potato - Superior</item>
+        <item>Potato - Yukons</item>
+        <item>Pumpkin</item>
+        <item>Radish</item>
+        <item>Raspberry</item>
+        <item>Rhubarb</item>
+        <item>Rutabaga</item>
+        <item>Ryegrass</item>
+        <item>Soybean</item>
+        <item>Spinach</item>
+        <item>Squash</item>
+        <item>Strawberry</item>
+        <item>Tomato</item>
+        <item>Wheat</item>
+        <item>Wheat - Milling</item>
+        <item>Wheat - Winter</item>
+    </string-array>
+
+    <string-array name="prevCrops">
+        <item>Alfalfa</item>
+        <item>Red Clover</item>
+        <item>Red Clover (2nd year)</item>
+        <item>Soybean (seeding year)</item>
+        <item>Annual ryegrass</item>
+    </string-array>
+
+    <string-array name="soilTestRatings">
+        <item>L-</item>
+        <item>L</item>
+        <item>M</item>
+        <item>M+</item>
+        <item>H</item>
+        <item>H+</item>
+    </string-array>
+
+    <string-array name="manureTypes">
+        <item>Swine - Liquid (gal/ac)</item>
+        <item>Swine - Solid (ton/ac)</item>
+        <item>Dairy - Liquid (gal/ac)</item>
+        <item>Dairy - Solid (ton/ac)</item>
+        <item>Poultry - Liquid (gal/ac)</item>
+        <item>Poultry - Solid (ton/ac)</item>
+    </string-array>
+
+
+    //
+
+</resources>

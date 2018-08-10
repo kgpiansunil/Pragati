@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sunil.pragati.planning.PredictionReport">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Estimated Crop Production Yield"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:id="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/yieldText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp" />
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/myBarChart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/yieldText"
+        android:layout_marginTop="10dp"></com.github.mikephil.charting.charts.BarChart>
+</RelativeLayout>
