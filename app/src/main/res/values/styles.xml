@@ -10,6 +10,7 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowBackground">@color/colorWhite</item>
         <item name="android:colorBackground">@color/colorWhite</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="AppFullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
@@ -17,6 +18,7 @@
         <item name="android:windowActionBar">false</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <!--Used to remove the actionbar elevation-->
@@ -34,6 +36,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/bg_cta_button</item>
         <item name="android:clickable">true</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="proceedButtonStyle">
@@ -43,6 +46,7 @@
         <item name="android:layout_height">wrap_content</item>
         <item name="android:background">@drawable/button_selector</item>
         <item name="android:clickable">true</item>
+        <item name="android:fontFamily">@font/roboto_regular</item>
     </style>
 
     <style name="tv_list_header">

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
-    tools:context="com.example.sunil.pragati.MainActivity">
+    tools:context="com.example.sunil.pragati.MainActivity"
+    >
 
-    <TextView
+    <!--<TextView
         android:id="@+id/text_bg1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="198dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="false"
@@ -30,9 +30,9 @@
         android:id="@+id/planning_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="false"
+        android:layout_marginTop="63dp"
         android:layout_weight="1"
         android:elevation="4dp"
         android:padding="15dp"
@@ -45,7 +45,7 @@
     <TextView
         android:id="@+id/text_bg2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="199dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_centerInParent="false"
@@ -55,7 +55,24 @@
         android:background="@android:color/black"
         android:elevation="4dp"
         android:padding="15dp"
-        android:text="Crop Care"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/text_bg3"
+        android:layout_width="match_parent"
+        android:layout_height="197dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="false"
+        android:layout_marginTop="395dp"
+        android:layout_weight="1"
+        android:alpha=".45"
+        android:background="@android:color/black"
+        android:elevation="4dp"
+        android:padding="15dp"
         android:textAlignment="center"
         android:textColor="@android:color/white"
         android:textSize="36sp"
@@ -65,10 +82,8 @@
         android:id="@+id/care_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="false"
-        android:layout_marginTop="197dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
         android:layout_weight="1"
         android:elevation="4dp"
         android:padding="15dp"
@@ -79,32 +94,12 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/text_bg3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="false"
-        android:layout_marginTop="395dp"
-        android:layout_weight="1"
-        android:alpha=".45"
-        android:background="@android:color/black"
-        android:elevation="4dp"
-        android:padding="15dp"
-        android:text="Crop Market"
-        android:textAlignment="center"
-        android:textColor="@android:color/white"
-        android:textSize="36sp"
-        android:textStyle="bold" />
-
-    <TextView
         android:id="@+id/market_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_centerInParent="false"
-        android:layout_marginTop="395dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="53dp"
         android:layout_weight="1"
         android:elevation="4dp"
         android:padding="15dp"
@@ -148,6 +143,48 @@
             android:scaleType="centerCrop"
             app:srcCompat="@drawable/cropmarketplace" />
 
-    </LinearLayout>
+    </LinearLayout>-->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutDots"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:orientation="horizontal"></LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:alpha=".5"
+        android:layout_above="@id/layoutDots"
+        android:background="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:background="@null"
+        android:text="Next"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btn_pre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@null"
+        android:text="Previous"
+        android:visibility="gone"
+        android:textColor="@android:color/white" />
 
 </RelativeLayout>
